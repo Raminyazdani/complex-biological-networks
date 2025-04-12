@@ -1,0 +1,6 @@
+Ramin Yazdani | Complex Biological Networks | main | feat(init): Initial repository setup and configuration
+
+Created repository with README, LICENSE (MIT), requirements.txt with core dependencies (numpy, scipy, matplotlib, sklearn, pandas, networkx, sympy, jupyter), and .gitignore for Python projects. Established foundation for network controllability and causal discovery analysis framework. Set up standard project structure following Python best practices.
+
+Verified working by running relevant scripts and checking outputs.
+Tested on Python 3.12 with all dependencies installed.
