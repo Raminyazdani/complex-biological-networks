@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(init): Initial repository setup and configuration
+Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Add K-means clustering implementation
 
-Created repository with README, LICENSE (MIT), requirements.txt with core dependencies (numpy, scipy, matplotlib, sklearn, pandas, networkx, sympy, jupyter), and .gitignore for Python projects. Established foundation for network controllability and causal discovery analysis framework. Set up standard project structure following Python best practices.
+Implemented K-means clustering algorithm with 3 clusters in main.py. Added sample data array [1, 7, 10, 11, 14, 20] for testing. Set up structure for hierarchical clustering to be added next. This provides foundation for network pattern identification and grouping analysis.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
