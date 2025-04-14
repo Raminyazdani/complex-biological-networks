@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Add K-means clustering implementation
+Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Add hierarchical clustering and visualization imports
 
-Implemented K-means clustering algorithm with 3 clusters in main.py. Added sample data array [1, 7, 10, 11, 14, 20] for testing. Set up structure for hierarchical clustering to be added next. This provides foundation for network pattern identification and grouping analysis.
+Added scipy hierarchical clustering imports (dendrogram, linkage) and matplotlib/seaborn for visualization. Set up framework for hierarchical clustering dendrograms and distance matrix heatmaps. Prepared visualization pipeline for clustering results.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
