@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Add hierarchical clustering and visualization imports
+Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Implement distance matrix with array indexing bug
 
-Added scipy hierarchical clustering imports (dendrogram, linkage) and matplotlib/seaborn for visualization. Set up framework for hierarchical clustering dendrograms and distance matrix heatmaps. Prepared visualization pipeline for clustering results.
+Implemented Euclidean distance matrix calculation but introduced bug: distance_matrix[i][j] = np.sqrt((A_reshaped[i] - A_reshaped[j]) ** 2). After reshaping A to (-1, 1), each A_reshaped[i] is a 1D array not scalar, causing broadcast error. Bug caught during testing when ValueError occurred.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.

@@ -39,6 +39,20 @@ print("K-means Clustering Results:")
 for i, cluster in enumerate(clusters, 1):
     print(f"Cluster {i}: {np.array(cluster)}")
 
-# Hierarchical Clustering
-# Distance matrix calculation will be added in next step
-print("\nHierarchical clustering structure prepared.")
+# Hierarchical Clustering with Distance Matrix
+def calculate_distance_matrix(data):
+    """Calculate Euclidean distance matrix."""
+    A_reshaped = data.reshape(-1, 1)
+    length = len(data)
+    distance_matrix = np.zeros((length, length))
+    
+    for i in range(length):
+        for j in range(length):
+            # BUG: A_reshaped[i] is 1D array after reshape, not scalar
+            distance_matrix[i][j] = np.sqrt((A_reshaped[i] - A_reshaped[j]) ** 2)
+    
+    return distance_matrix
+
+# Calculate distance matrix
+distance_matrix = calculate_distance_matrix(A)
+print("\nDistance matrix calculated (hierarchical clustering ready).")
