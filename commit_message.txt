@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Implement distance matrix with array indexing bug
+Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Debug distance matrix computation issue
 
-Implemented Euclidean distance matrix calculation but introduced bug: distance_matrix[i][j] = np.sqrt((A_reshaped[i] - A_reshaped[j]) ** 2). After reshaping A to (-1, 1), each A_reshaped[i] is a 1D array not scalar, causing broadcast error. Bug caught during testing when ValueError occurred.
+Investigating ValueError in distance matrix calculation. The reshape to (-1, 1) changed array dimensions. Running debugger to understand broadcast error. Testing with print statements to inspect array shapes. Found that A_reshaped[i] returns 1D array [value] not scalar value.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
