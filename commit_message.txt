@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(clustering): Debug distance matrix computation issue
+Ramin Yazdani | Complex Biological Networks | main | feat(clustering): Fix array indexing in distance matrix calculation
 
-Investigating ValueError in distance matrix calculation. The reshape to (-1, 1) changed array dimensions. Running debugger to understand broadcast error. Testing with print statements to inspect array shapes. Found that A_reshaped[i] returns 1D array [value] not scalar value.
+Fixed array indexing bug by correcting to distance_matrix[i][j] = np.sqrt((A[i][0] - A[j][0]) ** 2). Now properly accesses scalar value at index [0] after reshape. Tested and verified distance matrix computation works correctly. Common NumPy mistake when working with reshaping operations.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
