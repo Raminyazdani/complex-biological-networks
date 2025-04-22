@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(clustering): Fix array indexing in distance matrix calculation
+Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Implement PC algorithm basics for causal discovery
 
-Fixed array indexing bug by correcting to distance_matrix[i][j] = np.sqrt((A[i][0] - A[j][0]) ** 2). Now properly accesses scalar value at index [0] after reshape. Tested and verified distance matrix computation works correctly. Common NumPy mistake when working with reshaping operations.
+Created main2.py with PC (Peter-Clark) algorithm structure. Added conditional independence testing using partial correlations and implemented edge removal logic based on independence tests. Added data generation (random_pc_data.csv) and NetworkX imports for graph operations.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
