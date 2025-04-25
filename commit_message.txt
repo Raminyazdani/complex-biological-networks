@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Implement PC algorithm basics for causal discovery
+Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Refine PC algorithm structure and add graph imports
 
-Created main2.py with PC (Peter-Clark) algorithm structure. Added conditional independence testing using partial correlations and implemented edge removal logic based on independence tests. Added data generation (random_pc_data.csv) and NetworkX imports for graph operations.
+Enhanced PC algorithm structure in main2.py. Added comprehensive NetworkX graph manipulation imports. Set up conditional independence test framework with placeholder functions. Prepared data structures for edge tracking and removal logic.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
