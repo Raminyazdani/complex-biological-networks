@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Refine PC algorithm structure and add graph imports
+Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Implement comprehensive conditional independence testing
 
-Enhanced PC algorithm structure in main2.py. Added comprehensive NetworkX graph manipulation imports. Set up conditional independence test framework with placeholder functions. Prepared data structures for edge tracking and removal logic.
+Enhanced independence testing with proper p-value calculations. Added statistical testing for all variable combinations with conditioning set logic. Implemented detailed logging of test results and framework for tracking removed edges during PC algorithm execution.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
