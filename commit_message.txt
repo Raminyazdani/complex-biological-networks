@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Implement comprehensive conditional independence testing
+Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Refine statistical testing in PC algorithm
 
-Enhanced independence testing with proper p-value calculations. Added statistical testing for all variable combinations with conditioning set logic. Implemented detailed logging of test results and framework for tracking removed edges during PC algorithm execution.
+Enhanced p-value calculations for conditional independence tests. Improved handling of conditioning sets with multiple variables. Added better error handling for edge cases in partial correlation computation. Refined test output formatting for debugging.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
