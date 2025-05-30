@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Refine statistical testing in PC algorithm
+Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Begin edge orientation implementation
 
-Enhanced p-value calculations for conditional independence tests. Improved handling of conditioning sets with multiple variables. Added better error handling for edge cases in partial correlation computation. Refined test output formatting for debugging.
+Started implementing edge orientation logic for PC algorithm. Added v-structure detection framework. Set up directed edge storage. Prepared visualization structure for displaying causal directions. Foundation for completing causal graph construction.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
