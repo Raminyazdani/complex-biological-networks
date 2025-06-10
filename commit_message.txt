@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(causal): Begin edge orientation implementation
+Ramin Yazdani | Complex Biological Networks | main | feat(causal): Complete PC algorithm with edge orientation and visualization
 
-Started implementing edge orientation logic for PC algorithm. Added v-structure detection framework. Set up directed edge storage. Prepared visualization structure for displaying causal directions. Foundation for completing causal graph construction.
+Added edge orientation logic for causal direction with v-structure detection. Implemented network visualization using NetworkX and Matplotlib. Completed comprehensive causal discovery output with detailed independence test reporting. PC algorithm now fully functional with visual output.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
