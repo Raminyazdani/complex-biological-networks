@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(causal): Complete PC algorithm with edge orientation and visualization
+Ramin Yazdani | Complex Biological Networks | main | WIP(control): Initialize network controllability analysis module
 
-Added edge orientation logic for causal direction with v-structure detection. Implemented network visualization using NetworkX and Matplotlib. Completed comprehensive causal discovery output with detailed independence test reporting. PC algorithm now fully functional with visual output.
+Created main3.py with network controllability structure. Defined network topology (vertices, edges with weights) and control input configurations. Built adjacency matrix construction and prepared framework for controllability matrix computation. Foundation for control theory implementation.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
