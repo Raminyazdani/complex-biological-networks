@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(control): Initialize network controllability analysis module
+Ramin Yazdani | Complex Biological Networks | main | WIP(control): Implement adjacency matrix construction
 
-Created main3.py with network controllability structure. Defined network topology (vertices, edges with weights) and control input configurations. Built adjacency matrix construction and prepared framework for controllability matrix computation. Foundation for control theory implementation.
+Added detailed adjacency matrix construction from edge list in main3.py. Implemented weight assignment to matrix elements. Set up validation of matrix properties (dimensions, symmetry checks for undirected graphs). Foundation ready for controllability matrix computation.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
