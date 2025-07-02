@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(control): Implement adjacency matrix construction
+Ramin Yazdani | Complex Biological Networks | main | WIP(control): Implement iterative controllability matrix building
 
-Added detailed adjacency matrix construction from edge list in main3.py. Implemented weight assignment to matrix elements. Set up validation of matrix properties (dimensions, symmetry checks for undirected graphs). Foundation ready for controllability matrix computation.
+Implemented loop for constructing controllability matrix C = [B, AB, A²B, ...]. Added matrix power computation with NumPy. Set up concatenation logic for building full controllability matrix. Testing rank calculation approach.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
