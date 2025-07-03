@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(control): Implement iterative controllability matrix building
+Ramin Yazdani | Complex Biological Networks | main | WIP(control): Add controllability matrix computation
 
-Implemented loop for constructing controllability matrix C = [B, AB, A²B, ...]. Added matrix power computation with NumPy. Set up concatenation logic for building full controllability matrix. Testing rank calculation approach.
+Implemented controllability matrix calculation: C = [B, AB, A²B, ..., Aⁿ⁻¹B]. Added matrix power computations using NumPy and rank calculation for controllability testing. Set up structure for exact controllability tests. Core control theory mathematics implemented.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
