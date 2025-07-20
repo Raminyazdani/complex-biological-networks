@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(control): Add structural controllability with import typo
+Ramin Yazdani | Complex Biological Networks | main | WIP(control): Debug ModuleNotFoundError for colorama
 
-Implemented structural controllability test (generic controllability) and colored terminal output. **BUG INTRODUCED:** Typo in import: 'from colorma import Fore, Style, init' (missing 'a'). Bug caught immediately when running python main3.py with ModuleNotFoundError.
+Investigating import error. Ran python main3.py and got "ModuleNotFoundError: No module named 'colorma'". Checked import statement and found typo. Reviewed requirements.txt - colorama is listed correctly. Simple typo in import line: missing 'a' at end.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
