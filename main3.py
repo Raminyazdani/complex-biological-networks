@@ -17,7 +17,7 @@ Key Concepts:
 """
 
 from itertools import combinations
-from colorma import Fore, Style, init
+from colorama import Fore, Style, init
 import array_to_latex as a2l
 
 import numpy as np
