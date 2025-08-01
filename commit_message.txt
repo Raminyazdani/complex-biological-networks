@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(control): Fix import error and add initial testing
+Ramin Yazdani | Complex Biological Networks | main | feat(control): Fix colorama import typo and complete visualization
 
-Corrected 'colorma' to 'colorama' in import statement. Tested script execution - now runs without errors. Added initial test run with sample network. Colored output working correctly with Fore and Style from colorama.
+Corrected import to 'from colorama import Fore, Style, init'. Verified script runs successfully with colored output. Added complete network visualization with NetworkX showing control inputs and topology. Controllability analysis module now fully working.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
