@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(control): Fix colorama import typo and complete visualization
+Ramin Yazdani | Complex Biological Networks | main | feat(control): Implement minimum driver node finder
 
-Corrected import to 'from colorama import Fore, Style, init'. Verified script runs successfully with colored output. Added complete network visualization with NetworkX showing control inputs and topology. Controllability analysis module now fully working.
+Created main4.py for finding minimum driver node configurations. Implements combinatorial optimization to determine minimal control sets. Uses itertools.combinations to test all possible driver node subsets. Finds optimal control configurations for network controllability.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
