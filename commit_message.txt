@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(control): Implement minimum driver node finder
+Ramin Yazdani | Complex Biological Networks | main | feat(symbolic): Add symbolic matrix rank calculator
 
-Created main4.py for finding minimum driver node configurations. Implements combinatorial optimization to determine minimal control sets. Uses itertools.combinations to test all possible driver node subsets. Finds optimal control configurations for network controllability.
+Created test.py with SymPy for symbolic matrix operations. Implements symbolic rank calculations and matrix transformations. Useful for theoretical analysis of controllability matrices. Provides utilities for symbolic linear algebra operations.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
