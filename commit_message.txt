@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(symbolic): Add symbolic matrix rank calculator
+Ramin Yazdani | Complex Biological Networks | main | feat(experimental): Add Jupyter notebook for symbolic analysis
 
-Created test.py with SymPy for symbolic matrix operations. Implements symbolic rank calculations and matrix transformations. Useful for theoretical analysis of controllability matrices. Provides utilities for symbolic linear algebra operations.
+Created test.ipynb for experimental symbolic controllability matrix analysis. Added echelon form computations and interactive testing environment. Provides workspace for exploring symbolic matrix properties and controllability theory interactively.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
