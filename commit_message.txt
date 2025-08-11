@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(experimental): Add Jupyter notebook for symbolic analysis
+Ramin Yazdani | Complex Biological Networks | main | WIP(deps): Add core dependencies to requirements.txt
 
-Created test.ipynb for experimental symbolic controllability matrix analysis. Added echelon form computations and interactive testing environment. Provides workspace for exploring symbolic matrix properties and controllability theory interactively.
+Updated requirements.txt with additional dependencies: networkx>=2.6.0 for graph operations, sympy>=1.9.0 for symbolic math, colorama>=0.4.4 for terminal colors. Set up dependency management for all modules.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
