@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(deps): Add core dependencies to requirements.txt
+Ramin Yazdani | Complex Biological Networks | main | WIP(deps): Add network analysis dependencies
 
-Updated requirements.txt with additional dependencies: networkx>=2.6.0 for graph operations, sympy>=1.9.0 for symbolic math, colorama>=0.4.4 for terminal colors. Set up dependency management for all modules.
+Added networkx to requirements.txt for graph data structures and algorithms. Added sympy for symbolic mathematics in controllability analysis. Both dependencies critical for main2.py, main3.py, and test.py functionality.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
