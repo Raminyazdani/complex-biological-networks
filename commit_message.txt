@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(deps): Add network analysis dependencies
+Ramin Yazdani | Complex Biological Networks | main | WIP(deps): Add visualization dependencies with typo
 
-Added networkx to requirements.txt for graph data structures and algorithms. Added sympy for symbolic mathematics in controllability analysis. Both dependencies critical for main2.py, main3.py, and test.py functionality.
+Added matplotlib and seaborn to requirements but **BUG:** typed 'matplotli>=3.4.0' instead of 'matplotlib>=3.4.0' (missing 'b'). Error caught when running pip install -r requirements.txt with version not found error.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
