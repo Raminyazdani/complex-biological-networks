@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | WIP(docs): Add initial README with command errors
+Ramin Yazdani | Complex Biological Networks | main | WIP(docs): Test README instructions and find errors
 
-Created comprehensive README with project overview, setup instructions, and usage examples. **BUGS:** Incorrect run commands 'cd network-analysis && python main.py' (no such directory exists) and typo in data path reference. Documentation needs testing and correction.
+Following README setup and run instructions to verify accuracy. Attempted 'cd network-analysis && python main.py' but directory doesn't exist. Checked repository structure - files are in root, not subdirectory. Found additional path reference errors. README needs correction.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
