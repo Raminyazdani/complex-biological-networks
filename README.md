@@ -1,40 +1,264 @@
 # Network Controllability & Causal Discovery Framework
 
-A Python framework for analyzing complex biological networks.
+**A Python framework for analyzing network controllability and causal relationships in complex biological systems**
+
+## Overview
+
+This framework provides tools for understanding control mechanisms and causal relationships in complex networks. It combines control theory, causal inference, and network analysis to help researchers analyze the controllability properties of biological networks and discover causal structures from observational data.
+
+## What It Does
+
+The framework addresses key questions in network science:
+- **Can we control a network?** Determines if a network can be driven to any desired state using control inputs
+- **What's the causal structure?** Infers cause-effect relationships from observational data
+- **How do networks cluster?** Identifies patterns and structures in network topology
+
+### Approach
+
+1. **Network Controllability Analysis**: Uses control theory to compute controllability matrices and determine whether networks are controllable (exact and structural controllability tests)
+2. **Causal Discovery**: Implements the PC (Peter-Clark) algorithm with conditional independence testing to build causal graphs
+3. **Clustering Analysis**: Applies K-means and hierarchical clustering to identify network patterns
+4. **Optimization**: Finds minimum driver node sets for efficient network control
+
+## Tech Stack
+
+- **Python 3.x** - Core language
+- **NumPy** - Numerical computations
+- **SciPy** - Scientific computing and hierarchical clustering
+- **NetworkX** - Graph/network data structures and algorithms
+- **Scikit-learn** - Machine learning (K-means clustering)
+- **Matplotlib & Seaborn** - Visualization
+- **SymPy** - Symbolic mathematics
+- **Pandas** - Data manipulation
+- **Jupyter** - Interactive notebooks (optional)
+
+## Repository Structure
+
+```
+network-controllability-analysis/
+├── main.py                      # Clustering analysis (K-means, hierarchical)
+├── main2.py                     # Causal discovery (PC algorithm)
+├── main3.py                     # Network controllability analysis
+├── main4.py                     # Minimum driver node finder
+├── test.py                      # Symbolic matrix rank calculator
+├── test.ipynb                   # Experimental notebook
+├── random_pc_data.csv           # Sample data for PC algorithm
+├── report.docx                  # Legacy documentation (Persian)
+├── requirements.txt             # Python dependencies
+└── README.md                    # This file
+```
 
 ## Setup
 
+### Prerequisites
+
+- Python 3.7 or higher
+- pip package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Raminyazdani/complex-biological-networks.git
+cd complex-biological-networks
+```
+
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
+**Note**: Jupyter is optional and only needed for running notebooks.
+
 ## How to Run
 
-**Clustering Analysis:**
+All scripts should be run from the repository root directory.
+
+### Clustering Analysis
+
+Performs K-means clustering and hierarchical clustering with visualizations:
+
 ```bash
-cd network-analysis  # Wrong: this directory doesn't exist
 python main.py
 ```
 
-**Causal Discovery:**
+**Output:**
+- Console: Cluster assignments
+- Plots: Euclidean distance heatmap, dendrogram, cluster scatter plot
+
+### Causal Discovery
+
+Runs the PC algorithm to infer causal relationships:
+
 ```bash
-cd network-analysis  # Wrong path
 python main2.py
 ```
 
-**Network Controllability:**
+**Output:**
+- Console: Conditional independence test results, p-values
+- Plots: Network graphs showing causal structure at each step
+- File: `random_pc_data.csv` (generated with synthetic data)
+
+### Network Controllability
+
+Analyzes exact and structural controllability:
+
 ```bash
-python main3.py  # This one happens to be correct
+python main3.py
+```
+
+**Output:**
+- Console: Controllability matrices, rank calculations, controllability status
+- Plots: Network topology with control inputs
+
+### Minimum Driver Nodes
+
+Finds optimal control configurations (warning: computationally intensive):
+
+```bash
+python main4.py
+```
+
+**Output:**
+- Console: Progress counter, minimum driver nodes found
+- Plots: Network visualization with optimal driver node placement
+
+### Symbolic Rank Calculation
+
+Demonstrates symbolic matrix operations:
+
+```bash
+python test.py
+```
+
+### Jupyter Notebook
+
+For interactive exploration:
+
+```bash
+jupyter notebook test.ipynb
 ```
 
 ## Data
 
-Data files are located in `data/random_pc_data.csv` (Wrong path - file is in root)
+### Inputs
 
-## Features
+**For Clustering (main.py):**
+- Sample array: `A = [1, 7, 10, 11, 14, 20]` (hardcoded)
+- Or provide your own 1D array
 
-- K-means and hierarchical clustering
-- PC algorithm for causal discovery
-- Network controllability analysis
-- Minimum driver node optimization
-- Symbolic mathematics tools
+**For Causal Discovery (main2.py):**
+- CSV file: `random_pc_data.csv` (auto-generated by script)
+- Or provide your own observational data with columns: X, Y, Z, W, T
+
+**For Controllability (main3.py, main4.py):**
+- Network defined by:
+  - `vertices`: List of node labels (e.g., `["X1", "X2", "X3"]`)
+  - `edges_weight`: Dict of edges with weights (e.g., `{"X1-X2": 1}`)
+  - `Inputs`: Dict of control inputs (e.g., `{"b1": {"X1": 1}}`)
+
+### Outputs
+
+- **Controllability metrics**: Exact/structural controllability status
+- **Causal graphs**: Directed networks showing cause-effect relationships
+- **Cluster visualizations**: Dendrograms, heatmaps, scatter plots
+- **Statistical results**: P-values, partial correlations, ranks
+
+## Key Concepts
+
+### Network Controllability
+
+A network is **controllable** if it can be driven from any initial state to any desired final state using control inputs at driver nodes. This framework computes:
+
+- **Controllability Matrix**: `C = [B, AB, A²B, ..., Aⁿ⁻¹B]`
+- **Exact Controllability**: rank(C) = n (full rank)
+- **Structural Controllability**: Generic controllability based on network structure
+
+### PC Algorithm
+
+The **PC (Peter-Clark) algorithm** learns causal structure through:
+1. Start with complete undirected graph
+2. Remove edges based on conditional independence tests
+3. Orient edges using v-structures and propagation rules
+
+### Driver Nodes
+
+**Minimum driver nodes** are the smallest set of nodes that must be directly controlled to achieve full network controllability. Finding them is NP-hard.
+
+## Reproducibility Notes
+
+- **Random Seeds**: Set where appropriate (e.g., `np.random.seed(40)` in main2.py)
+- **Dependencies**: Versions specified in requirements.txt
+- **Python Version**: Tested on Python 3.7+
+- **Plots**: Use `plt.show()` for interactive display; some environments may require backend configuration
+
+## Troubleshooting
+
+### Import Errors
+```bash
+pip install numpy scipy matplotlib seaborn scikit-learn networkx sympy pandas
+```
+
+### Plot Display Issues
+- Add `plt.show()` if plots don't appear
+- Or run in Jupyter: `jupyter notebook`
+- Check matplotlib backend: `matplotlib.use('TkAgg')` or `'Qt5Agg'`
+
+### Notebook Errors
+- Ensure Jupyter is installed: `pip install jupyter`
+- Clear kernel and restart: Kernel → Restart & Clear Output
+
+### Memory Issues (main4.py)
+- Reduce network size (< 8 nodes recommended)
+- Algorithm complexity: O(2ⁿ × n³)
+
+### CSV Encoding
+If CSV reading fails:
+```python
+pd.read_csv('random_pc_data.csv', encoding='utf-8')
+```
+
+### Missing colorama (main3.py)
+```bash
+pip install colorama
+```
+
+### Missing array_to_latex (main3.py)
+```bash
+pip install array-to-latex
+```
+
+## Technical Details
+
+### Controllability Matrix Computation
+
+The controllability matrix concatenates powers of the system matrix:
+```
+C = [B | AB | A²B | ... | Aⁿ⁻¹B]
+```
+
+Where:
+- `A` is the adjacency matrix (n × n)
+- `B` is the control input matrix (n × m)
+- `n` is the number of nodes
+
+### Conditional Independence Testing
+
+Tests whether X ⊥ Y | Z using partial correlation:
+1. Regress X on Z, compute residuals εₓ
+2. Regress Y on Z, compute residuals εᵧ  
+3. Test correlation between εₓ and εᵧ (p-value > α implies independence)
+
+## License
+
+See repository for license information.
+
+## References
+
+- **PC Algorithm**: Spirtes, P., Glymour, C., & Scheines, R. (2000). Causation, Prediction, and Search.
+- **Network Controllability**: Liu, Y. Y., Slotine, J. J., & Barabási, A. L. (2011). Controllability of complex networks. Nature.
+
+## Contributing
+
+This is a research-oriented framework. Feel free to fork and extend for your own network analysis needs.
+
