@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(docs): Fix run commands and paths in README
+Ramin Yazdani | Complex Biological Networks | main | feat(docs): Add comprehensive module docstrings to all scripts
 
-Corrected all run commands to execute from repository root (just 'python main.py'). Fixed path references. Verified instructions work by following README. Added better structure with What It Does, Tech Stack, and Repository Structure sections.
+Added detailed docstrings to main.py (clustering), main2.py (causal discovery), main3.py (controllability), main4.py (driver nodes), and test.py (symbolic math). Clarifies purpose and functionality of each module for code readers.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
