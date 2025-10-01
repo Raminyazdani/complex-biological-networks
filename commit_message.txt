@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(docs): Add comprehensive module docstrings to all scripts
+Ramin Yazdani | Complex Biological Networks | main | feat(config): Update .gitignore for Python artifacts and temp files
 
-Added detailed docstrings to main.py (clustering), main2.py (causal discovery), main3.py (controllability), main4.py (driver nodes), and test.py (symbolic math). Clarifies purpose and functionality of each module for code readers.
+Enhanced .gitignore to exclude __pycache__/, *.pyc, temp Word files (~$*.docx, ~WRL*.tmp), .ipynb_checkpoints/, *.egg-info/, dist/, build/. Prevents committing generated files and build artifacts.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
