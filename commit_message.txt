@@ -1,6 +1,6 @@
-Ramin Yazdani | Complex Biological Networks | main | feat(config): Update .gitignore for Python artifacts and temp files
+Ramin Yazdani | Complex Biological Networks | main | WIP(docs): Create project identity document
 
-Enhanced .gitignore to exclude __pycache__/, *.pyc, temp Word files (~$*.docx, ~WRL*.tmp), .ipynb_checkpoints/, *.egg-info/, dist/, build/. Prevents committing generated files and build artifacts.
+Created project_identity.md to define professional portfolio identity. Documented display title, tagline, repo slug, tech stack, and project approach. Removed academic framing and focused on technical contributions. Prepared identity for final README integration.
 
 Verified working by running relevant scripts and checking outputs.
 Tested on Python 3.12 with all dependencies installed.
