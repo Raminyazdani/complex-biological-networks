@@ -1,16 +1,3 @@
-"""
-Clustering Analysis Module
-
-Performs K-means and hierarchical clustering analysis on network data.
-Generates distance matrices, dendrograms, and heatmap visualizations.
-
-Features:
-- K-means clustering (3 clusters by default)
-- Hierarchical clustering using Ward's method
-- Euclidean distance matrix computation
-- Visualization with matplotlib and seaborn
-"""
-
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -40,14 +27,14 @@ for i in range(3):
 plt.figure(figsize=(8, 6))
 sns.heatmap(distance_matrix, annot=True, cmap="Blues_r", xticklabels=A.flatten(), yticklabels=A.flatten())
 plt.title("Euclidean Distance Heatmap (Inverted Blue Shades)")
-plt.xlabel("Elements of Set A_plot")
-plt.ylabel("Elements of Set A_plot")
+plt.xlabel("Elements of Set A")
+plt.ylabel("Elements of Set A")
 plt.show()
 
 plt.figure(figsize=(10, 5))
 dendrogram(linkage_matrix, labels=A.flatten(), orientation='top', color_threshold=7)
 plt.title("Dendrogram (Hierarchical Clustering Tree Map)")
-plt.xlabel("Elements of Set A_plot")
+plt.xlabel("Elements of Set A")
 plt.ylabel("Distance")
 plt.show()
 
@@ -58,8 +45,8 @@ for i in range(3):
     for point in cluster_points:
         plt.annotate(int(point[0]), (point, 0), textcoords="offset points", xytext=(0, 10), ha='center')
 
-plt.xlabel('Elements of Set A_plot')
-plt.title('K-means Clustering of Set A_plot')
+plt.xlabel('Elements of Set A')
+plt.title('K-means Clustering of Set A')
 plt.legend()
 plt.grid(True)
 plt.show()
