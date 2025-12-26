@@ -29,8 +29,6 @@ wheels/
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # IDEs
 .vscode/
@@ -42,7 +40,3 @@ venv.bak/
 # OS
 .DS_Store
 Thumbs.db
-
-# Microsoft Office temporary files
-~$*
-~WRL*.tmp

@@ -46,3 +46,6 @@ Thumbs.db
 # Microsoft Office temporary files
 ~$*
 ~WRL*.tmp
+
+# Project specific
+history/
