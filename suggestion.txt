@@ -1,1 +1,15 @@
 TYPE	FILE	LOCATOR	BEFORE_SNIPPET	PROPOSED_CHANGE	RATIONALE	STATUS
+TRACE	README.md	line 3	**Project Type:** University Project	Remove line entirely	Academic classification not suitable for portfolio	APPLIED
+TRACE	README.md	line 1	# Complex Biological Networks Analysis (شبکه های پیچیده زیستی)	# Network Controllability & Causal Discovery Framework	Align with professional project identity; remove Persian translation	APPLIED
+TRACE	README.md	line 6	This is a project focused on analyzing...	Reframe opening to professional tone without "project" language	Remove academic framing	APPLIED
+DOC	README.md	line 23	شبکه های پیچیده زیستی/	Update folder structure to reflect English naming	Persian folder name reference should be removed	APPLIED
+DOC	README.md	line 31	├── report.docx                  # Project report (Persian)	├── report.docx                  # Legacy documentation (Persian)	Reframe as legacy rather than project deliverable	APPLIED
+DOC	README.md	line 52	cd "شبکه های پیچیده زیستی"	Update to reflect actual repo usage	Current directory structure doesn't match	APPLIED
+DOC	README.md	entire file	Missing sections for professional portfolio	Add: Problem/Approach, better structure, reproducibility notes	Portfolio-grade README needs comprehensive sections	APPLIED
+OTHER	.gitignore	file missing	N/A	Create .gitignore with: __pycache__/, *.pyc, ~$*.docx, ~WRL*.tmp, .ipynb_checkpoints/, *.egg-info/, dist/, build/	Exclude temp files and Python artifacts	APPLIED
+DOC	requirements.txt	line 7	jupyter>=1.0.0	Add missing dependencies: networkx, sympy, colorama, array-to-latex	Complete dependency list for all scripts	APPLIED
+OTHER	main.py	top of file	Missing module docstring	Add docstring: "Clustering analysis module - K-means and hierarchical clustering with visualization"	Clarify file purpose for readers	APPLIED
+OTHER	main2.py	top of file	Missing module docstring	Add docstring: "Causal discovery module - PC algorithm implementation for inferring causal relationships"	Clarify file purpose for readers	APPLIED
+OTHER	main3.py	top of file	Missing module docstring	Add docstring: "Network controllability analysis module - Tools for analyzing controllability in complex networks"	Clarify file purpose for readers	APPLIED
+OTHER	main4.py	top of file	Missing module docstring	Add docstring: "Minimum driver node finder - Determines minimal control configurations for network controllability"	Clarify file purpose for readers	APPLIED
+OTHER	test.py	top of file	Missing module docstring	Add docstring: "Symbolic matrix rank calculator - Utilities for symbolic linear algebra operations"	Clarify file purpose for readers	APPLIED

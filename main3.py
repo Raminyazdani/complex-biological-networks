@@ -1,3 +1,21 @@
+"""
+Network Controllability Analysis Module
+
+Analyzes controllability properties of complex networks using control theory.
+Implements exact and structural controllability tests for directed networks.
+
+Features:
+- Controllability matrix computation
+- Exact controllability testing (rank-based)
+- Structural controllability analysis
+- Network topology visualization with control inputs
+- Support for cactus graph detection
+
+Key Concepts:
+- Controllability: ability to drive a network to any desired state using control inputs
+- Driver nodes: minimal set of nodes that must be controlled
+"""
+
 from itertools import combinations
 from colorama import Fore, Style, init
 import array_to_latex as a2l

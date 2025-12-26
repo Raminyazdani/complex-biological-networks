@@ -1,3 +1,18 @@
+"""
+Causal Discovery Module
+
+Implements the PC (Peter-Clark) algorithm for inferring causal relationships
+from observational data using conditional independence testing.
+
+Features:
+- PC algorithm for causal structure learning
+- Partial correlation-based conditional independence tests
+- Edge orientation using statistical inference
+- Network visualization of causal graphs
+
+Reference: PC algorithm by Peter Spirtes and Clark Glymour
+"""
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

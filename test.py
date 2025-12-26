@@ -1,3 +1,16 @@
+"""
+Symbolic Matrix Rank Calculator
+
+Performs symbolic linear algebra operations using SymPy.
+Computes matrix rank through symbolic row reduction.
+
+Features:
+- Symbolic matrix creation
+- Row operations (swapping, row reduction)
+- Symbolic rank calculation
+- Matrix transformation tracking
+"""
+
 import sympy as sp
 
 

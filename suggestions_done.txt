@@ -1,1 +1,12 @@
 FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
+README.md	line 1	# Complex Biological Networks Analysis (شبکه های پیچیده زیستی)	# Network Controllability & Causal Discovery Framework	Replaced with professional title matching project_identity.md, removed Persian translation
+README.md	line 3	**Project Type:** University Project	[removed]	Removed academic classification label
+README.md	entire file	[original README with academic framing]	[comprehensive portfolio-grade README]	Complete rewrite: added Overview, What It Does, Key Concepts, Technical Details, improved structure and professionalism
+.gitignore	file created	N/A	[complete .gitignore]	Created with Python, Jupyter, OS, and temp file exclusions including ~$* and ~WRL*.tmp
+requirements.txt	lines 8-11	[missing dependencies]	networkx>=2.6.0, sympy>=1.9.0, colorama>=0.4.4, array-to-latex>=0.82	Added missing dependencies used by main2.py, main3.py, test.py
+main.py	line 1	import numpy as np	[module docstring + imports]	Added comprehensive module docstring explaining clustering analysis purpose
+main2.py	line 1	import numpy as np	[module docstring + imports]	Added module docstring explaining PC algorithm and causal discovery
+main3.py	line 1	from itertools import combinations	[module docstring + imports]	Added detailed docstring covering network controllability concepts
+main4.py	line 1	from itertools import combinations	[module docstring + imports]	Added docstring explaining minimum driver node optimization with complexity warning
+test.py	line 1	import sympy as sp	[module docstring + import]	Added docstring describing symbolic matrix operations
+main.py	line 26	distance_matrix[i][j] = np.sqrt((A[i] - A[j]) ** 2)	distance_matrix[i][j] = np.sqrt((A[i][0] - A[j][0]) ** 2)	Fixed array indexing bug - A[i] is 2D after reshape, need to access scalar with [0]

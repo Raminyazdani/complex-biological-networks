@@ -1,3 +1,16 @@
+"""
+Clustering Analysis Module
+
+Performs K-means and hierarchical clustering analysis on network data.
+Generates distance matrices, dendrograms, and heatmap visualizations.
+
+Features:
+- K-means clustering (3 clusters by default)
+- Hierarchical clustering using Ward's method
+- Euclidean distance matrix computation
+- Visualization with matplotlib and seaborn
+"""
+
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -10,7 +23,7 @@ distance_matrix = np.zeros((len(A), len(A)))
 
 for i in range(len(A)):
     for j in range(len(A)):
-        distance_matrix[i][j] = np.sqrt((A[i] - A[j]) ** 2)
+        distance_matrix[i][j] = np.sqrt((A[i][0] - A[j][0]) ** 2)
 
 linkage_matrix = linkage(A, method='ward')
 

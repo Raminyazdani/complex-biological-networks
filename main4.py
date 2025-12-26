@@ -1,3 +1,19 @@
+"""
+Minimum Driver Node Finder
+
+Determines the minimal set of driver nodes required for complete network controllability.
+Exhaustively searches all possible control configurations to find optimal solutions.
+
+Features:
+- Exhaustive search over all node subsets
+- Identification of minimum driver node count
+- Optimization for minimum input connections
+- Visualization of optimal control configurations
+
+Note: Computational complexity grows exponentially with network size.
+Best suited for small to medium networks (< 10 nodes).
+"""
+
 from itertools import combinations
 
 from main3 import generate_A, plot_system_graph, generate_B, controllability_matrix, is_controllable, \
