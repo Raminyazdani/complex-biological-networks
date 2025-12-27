@@ -1,26 +1,6 @@
-# Complex Biological Networks Analysis
+# Network Controllability & Causal Discovery Framework
 
-A Python framework for analyzing complex biological networks using clustering algorithms.
-
-## Description
-
-This project provides tools for network analysis, clustering, and visualization. Currently implements K-means and hierarchical clustering with distance matrix computation and visualization.
-
-## Features
-
-- K-means clustering
-- Hierarchical clustering with dendrograms
-- Euclidean distance matrix computation
-- Heatmap visualizations
-
-## Tech Stack
-
-- Python 3.x
-- NumPy
-- SciPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+A Python framework for analyzing complex biological networks using control theory and causal inference.
 
 ## Setup
 
@@ -28,16 +8,6 @@ This project provides tools for network analysis, clustering, and visualization.
 pip install -r requirements.txt
 ```
 
-## Usage
+## Status
 
-Run the clustering analysis:
-
-```bash
-python main.py
-```
-
-This will perform K-means clustering (3 clusters) and generate visualizations including distance heatmaps and dendrograms.
-
-## License
-
-See LICENSE file for details.
+Initial project setup. More features coming soon.
